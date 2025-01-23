@@ -20,9 +20,9 @@ document.getElementById('consulta-form').addEventListener('submit', async functi
             const data = await response.json();
 
             if (data.valido === "true") {
-                alert('Cadena no válida');
-            } else {
                 alert('Cadena válida');
+            } else {
+                alert('Cadena no válida');
             }
         } else {
             alert('Error al consultar la cadena. Por favor, intenta nuevamente.');
